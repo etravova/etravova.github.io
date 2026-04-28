@@ -24,6 +24,9 @@ header {
   padding: 36px 0 0;
   border-bottom: 2px solid #222;
   margin-bottom: 28px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 header h1 {
@@ -31,6 +34,7 @@ header h1 {
   font-weight: bold;
   letter-spacing: 0.02em;
   margin-bottom: 12px;
+  white-space: nowrap;
 }
 
 /* ── Nav ──────────────────────────────────── */
@@ -38,6 +42,7 @@ nav {
   display: flex;
   gap: 0;
   margin-bottom: -2px;
+  flex-shrink: 0;
 }
 
 nav a {
@@ -61,7 +66,7 @@ nav a:hover {
 
 nav a.active {
   color: #222;
-  border-bottom-color: #222;
+  border-bottom-color: transparent;
 }
 
 /* ── Main content ─────────────────────────── */
@@ -72,13 +77,13 @@ main {
 /* ── Home page ────────────────────────────── */
 .home-grid {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 270px 1fr;
   gap: 36px;
   margin-top: 16px;
 }
 
 .home-photo img {
-  width: 200px;
+  width: 270px;
   height: auto;
   border: 1px solid #ddd;
   display: block;
